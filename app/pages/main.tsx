@@ -3,7 +3,7 @@ import { useRef } from "react";
 import { motion, useScroll, useTransform, MotionValue } from "framer-motion";
 import StackCard from "@/components/StackCard";
 import { cards } from "@/lib/CardData";
-import Card from "@/components/Card"
+import TextType from "@/components/TextType"
 
 
 
@@ -17,8 +17,23 @@ export default function Main() {
       <section className="flex flex-col md:flex-row">
         {/* Left Sticky */}
         <div className="w-full md:w-1/2">
-          <div className="md:sticky md:top-0 md:h-screen flex items-center justify-center p-6">
-            <h1 className="text-2xl font-bold text-white">Left Content</h1>
+          <div className="md:sticky md:top-0 md:h-screen flex items-center justify-center p-6 ">
+            <TextType
+              className="text-3xl font-bold text-white"
+              text={[
+                "Hello!",
+                "I am Marc Lawrence L. Tamayo",
+                "Aspiring to have a malaking tite"
+              ]}
+              typingSpeed={75}
+              deletingSpeed={50}
+              pauseDuration={1500}
+              showCursor
+              cursorCharacter="_"
+              cursorBlinkDuration={0.5}
+              loop={true}
+              startOnVisible={true}
+            />
           </div>
         </div>
 
