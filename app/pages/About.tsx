@@ -6,10 +6,10 @@ import TextType from "@/components/TextType"
 
 export default function About() {
   return (
-    <div className="flex flex-col justify-between h-full py-12 px-8 lg:px-12">
+    <div className="py-6 lg:py-10 px-4 md:px-6 lg:px-10">
       {/* Top Section - Name & Role */}
-      <div className="space-y-8">
-        <div className="space-y-4">
+      <div className="space-y-4 lg:space-y-8">
+        <div className="space-y-2 lg:space-y-4">
 
           <TextType
             text={["Marc Lawrence L. Tamayo"]}
@@ -31,10 +31,10 @@ export default function About() {
 
         {/* About */}
         <div className="space-y-3">
-          <p className="text-muted-foreground leading-relaxed text-sm">
+          <p className="text-muted-foreground leading-relaxed text-xs md:text-sm">
             I am a third-year Bachelor of Science in Computer Science student specializing in Software Engineering with a strong interest in becoming a full stack developer. I enjoy building both frontend and backend systems, with a focus on creating efficient, scalable, and user-friendly applications. My academic background has given me a solid foundation in programming, data structures, and software design principles, and I am continuously expanding my skills through projects and hands-on development experience.
           </p>
-          <p className="text-muted-foreground leading-relaxed text-sm">
+          <p className="text-muted-foreground leading-relaxed text-xs md:text-sm">
             Currently improving and learning backend development, devops and containers.
           </p>
         </div>
@@ -51,7 +51,7 @@ export default function About() {
             ].map((skill) => (
               <span
                 key={skill}
-                className="px-3 py-1 text-xs font-medium rounded-full bg-secondary text-secondary-foreground border border-border hover:border-teal-500/40 hover:text-teal-300 transition-colors duration-200 cursor-default"
+                className="px-2 py-0.5 text-[10px] md:text-xs text-xs font-medium rounded-full bg-secondary text-secondary-foreground border border-border hover:border-teal-500/40 hover:text-teal-300 transition-colors duration-200 cursor-default"
               >
                 {skill}
               </span>

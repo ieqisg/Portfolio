@@ -14,7 +14,7 @@ export default function Main() {
       <div className="min-h-screen ">
         <section className="relative">
           <div className="flex flex-col lg:flex-row">
-            <div className="lg:w-[42%] xl:w-[38%] lg:h-screen lg:sticky lg:top-0 border-b lg:border-b-0 ">
+            <div className="lg:w-[42%] xl:w-[38%] lg:h-screen lg:sticky lg:top-0 lg:overflow-y-auto">
               <AnimatedContent
                 distance={100}
                 direction="vertical"
