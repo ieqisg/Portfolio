@@ -34,9 +34,7 @@ export default function About() {
           <p className="text-muted-foreground leading-relaxed text-xs md:text-sm">
             I am a third-year Bachelor of Science in Computer Science student specializing in Software Engineering with a strong interest in becoming a full stack developer. I enjoy building both frontend and backend systems, with a focus on creating efficient, scalable, and user-friendly applications. My academic background has given me a solid foundation in programming, data structures, and software design principles, and I am continuously expanding my skills through projects and hands-on development experience.
           </p>
-          <p className="text-muted-foreground leading-relaxed text-xs md:text-sm">
-            Currently improving and learning backend development, devops and containers.
-          </p>
+
         </div>
 
         {/* Skills */}
@@ -90,13 +88,7 @@ export default function About() {
             <Mail className="w-5 h-5" />
           </a>
         </div>
-        <a
-          href="#contact"
-          className="inline-flex items-center gap-2 text-sm text-teal-400 hover:text-teal-300 transition-colors duration-200 cursor-pointer"
-        >
-          <span>Let&apos;s work together</span>
-          <ExternalLink className="w-3.5 h-3.5" />
-        </a>
+
       </div>
     </div>
   );
