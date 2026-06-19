@@ -3,6 +3,7 @@ import { AnimatedSection } from "@/components/AnimatedSection";
 import { Mail, Download, MapPin, Calendar, Award, BookOpen } from "lucide-react";
 
 import { timeline } from "@/datas/ExperienceData";
+import Certifications from "./Certifications";
 
 
 
@@ -62,6 +63,7 @@ export default function Experience() {
                 </div>
               </AnimatedSection>
             ))}
+
           </div>
         </div>
 

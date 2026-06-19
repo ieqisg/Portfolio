@@ -5,7 +5,7 @@ import About from "./About";
 import Projects from "./Projects";
 import AnimatedContent from "@/components/AnimatedContent";
 import Experience from './Experience';
-
+import Certifications from './Certifications';
 
 
 export default function Main() {
@@ -54,7 +54,10 @@ export default function Main() {
           </div>
         </section>
         <div className="w-full h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
+        <Certifications />
+        <div className="w-full h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
         <Experience />
+
       </div>
     </>
   );
