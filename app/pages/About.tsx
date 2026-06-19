@@ -47,7 +47,7 @@ export default function About() {
           <div className="flex flex-wrap gap-2">
             {[
               "TypeScript", "React", "Node.js", "Python",
-              "Supabase", "PostgreSQL"
+              "Supabase", "PostgreSQL", "MongoDB", "REST"
             ].map((skill) => (
               <span
                 key={skill}

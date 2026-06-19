@@ -1,4 +1,4 @@
-export const cards = [
+export const cardsData = [
   {
     title: "Card One",
     description: "This card sticks, then shrinks as the next one stacks on top.",
