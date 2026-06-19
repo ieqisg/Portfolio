@@ -14,7 +14,7 @@ export default function About() {
 
           <TextType
             text={["Marc Lawrence L. Tamayo"]}
-            typingSpeed={95}
+            typingSpeed={150}
             pauseDuration={1500}
             showCursor
             cursorCharacter="_"
