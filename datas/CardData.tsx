@@ -1,14 +1,17 @@
 export const cardsData = [
   {
-    title: "Card One",
-    description: "This card sticks, then shrinks as the next one stacks on top.",
+    title: "Title 1",
+    description: "desc 1",
+    stack: ["React", "Javascript"]
   },
   {
-    title: "Card Two",
-    description: "Notice the slight offset — that's what gives the 'deck' effect.",
+    title: "Title 2",
+    description: "desc 2",
+    stack: ["React", "Javascript"]
   },
   {
-    title: "Card Three",
-    description: "The last card stays full-size since nothing stacks on top of it.",
+    title: "Title 3",
+    description: "desc 3",
+    stack: ["React, Javascript"]
   },
 ];

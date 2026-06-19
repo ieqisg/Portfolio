@@ -3,7 +3,10 @@ import AnimatedSection from "@/components/AnimatedContent"
 import { CertificationsData } from "@/datas/CertificationsData"
 import { BadgeCheck } from "lucide-react"
 
+
+
 export default function Certifications() {
+
   return (
     <section id="contact" className="py-24 px-6 lg:px-16 xl:px-24">
       <div className="max-w-6xl mx-auto">
@@ -23,10 +26,10 @@ export default function Certifications() {
         </AnimatedSection>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {CertificationsData.map((cert, index) => (
-            <AnimatedSection key={cert.name} delay={index * 100}>
-              <div className={`p-5 rounded-xl border ${cert.color} transition-all duration-300 hover:scale-[1.02]`}>
+            <AnimatedSection key={cert.name} >
+              <div className={`p-5 rounded-xl border ${index % 2 == 0 ? "text-teal-400 bg-teal-500/10 border-teal-500/30" : "text-amber-400 bg-amber-500/10 border-amber-500/30"} transition-all duration-300 hover:scale-[1.02]`}>
                 <div className="flex items-start gap-3">
-                  <div className={`p-2 rounded-lg ${cert.color}`}>
+                  <div className={`p-2 rounded-lg ${index % 2 == 0 ? "text-teal-400 bg-teal-500/10 border-teal-500/30" : "text-amber-400 bg-amber-500/10 border-amber-500/30"}`}>
                     <BadgeCheck className="w-5 h-5" />
                   </div>
                   <div className="flex-1">

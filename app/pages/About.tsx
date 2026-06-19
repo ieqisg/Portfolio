@@ -3,6 +3,7 @@ import { Mail, MapPin, ExternalLink } from "lucide-react";
 import GithubIcon from "@/components/GithubIcon"
 import LinkedinIcon from "@/components/LinkedinIcon"
 import TextType from "@/components/TextType"
+import { TechnologiesData } from "@/datas/TechnologiesData";
 
 export default function About() {
   return (
@@ -43,10 +44,7 @@ export default function About() {
             Technologies
           </h3>
           <div className="flex flex-wrap gap-2">
-            {[
-              "TypeScript", "React", "Node.js", "Python",
-              "Supabase", "PostgreSQL", "MongoDB", "REST"
-            ].map((skill) => (
+            {TechnologiesData.map((skill) => (
               <span
                 key={skill}
                 className="px-2 py-0.5 text-[10px] md:text-xs text-xs font-medium rounded-full bg-secondary text-secondary-foreground border border-border hover:border-teal-500/40 hover:text-teal-300 transition-colors duration-200 cursor-default"

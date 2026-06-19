@@ -9,6 +9,7 @@ export default function StackCard({
   progress,
   range,
   targetScale,
+  stack
 }: {
   i: number;
   title: string;
@@ -16,6 +17,7 @@ export default function StackCard({
   progress: MotionValue<number>;
   range: [number, number];
   targetScale: number;
+  stack: string[];
 }) {
   const scale = useTransform(progress, range, [1, targetScale]);
 
@@ -45,11 +47,9 @@ export default function StackCard({
           bg-[radial-gradient(circle_at_50%_0%,#3a3a3a_0%,#1a1a1a_64%)]
           shadow-[0_0_0_1px_rgba(255,255,255,0.08),0_4px_4px_rgba(0,0,0,0.25)]
           p-6
-          transition-all
-          duration-300
-          hover:-translate-y-1
-          w-full
           h-[40vh]
+          flex flex-col
+          justify-between
         "
       >
         {/* Cursor spotlight */}
@@ -69,11 +69,37 @@ export default function StackCard({
           }}
         />
 
-        <div className="relative z-10">
-          <h2 className="mb-2 text-xl font-semibold text-white">
-            {title}
-          </h2>
-          <p className="text-zinc-400">{description}</p>
+        <div className="relative z-10 flex flex-col h-full">
+          {/* TOP CONTENT */}
+          <div>
+            <h2 className="mb-2 text-xl font-semibold text-white">
+              {title}
+            </h2>
+            <p className="text-zinc-400">{description}</p>
+          </div>
+
+          {/* BOTTOM STACK */}
+          <div className="flex flex-wrap gap-2 mt-auto pt-4 border-t border-white/10">
+            {stack.map((skill) => (
+              <span
+                key={skill}
+                className="
+              px-2 py-0.5
+              text-[10px] md:text-xs
+              font-medium
+              rounded-full
+              bg-white/5
+              text-zinc-300
+              border border-white/10
+              hover:border-teal-500/40
+              hover:text-teal-300
+              transition-colors
+          "
+              >
+                {skill}
+              </span>
+            ))}
+          </div>
         </div>
       </motion.div>
     </div>

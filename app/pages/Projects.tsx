@@ -23,6 +23,7 @@ export default function Projects() {
               i={i}
               title={card.title}
               description={card.description}
+              stack={card.stack}
               progress={scrollYProgress}
               range={[i * (1 / cardsData.length), 1]}
               targetScale={targetScale}

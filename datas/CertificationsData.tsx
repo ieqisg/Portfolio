@@ -5,16 +5,18 @@ interface Certifications {
   name: string;
   issuer: string;
   date: string;
-  id: string;
-  color: string;
+  id?: string;
 }
 
 export const CertificationsData: Certifications[] = [
   {
-    name: "Aws",
-    issuer: "Amazon",
+    name: "Python",
+    issuer: "Information Technology Specialist ",
+    date: "2025",
+  },
+  {
+    name: "PMI Project Management Ready",
+    issuer: "Project Management Institute",
     date: "2026",
-    id: "TIte",
-    color: "text-teal-400 bg-teal-500/10 border-teal-500/30"
   }
 ]
