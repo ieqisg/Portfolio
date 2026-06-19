@@ -10,11 +10,7 @@ export default function About() {
       {/* Top Section - Name & Role */}
       <div className="space-y-8">
         <div className="space-y-4">
-          {/*
-          <h1 className="text-4xl lg:text-5xl font-bold tracking-tight text-white">
-            Alex Chen
-          </h1>
-          */}
+
           <TextType
             text={["Marc Lawrence L. Tamayo"]}
             typingSpeed={95}
@@ -22,12 +18,11 @@ export default function About() {
             showCursor
             cursorCharacter="_"
             cursorBlinkDuration={0.5}
-            className="text-4xl lg:text-5xl font-bold tracking-tight text-white"
+            className="text-lg lg:text-2xl md:text-xl font-bold tracking-tight text-white"
             loop={false}
           />
-          <p className="text-lg text-teal-400 font-medium">
-            Full Stack Developer & Systems Architect
-          </p>
+          <p className="text-base md:text-lg lg:text-xl text-teal-400 font-medium">
+            Full Stack Developer           </p>
           <div className="flex items-center gap-2 text-sm text-muted-foreground">
             <MapPin className="w-4 h-4" />
             <span>Manila, Philippines</span>
