@@ -1,7 +1,6 @@
 "use client";
-
+import AnimatedContent from "@/components/AnimatedContent"
 import Main from "./pages/main";
-import Beams from "@/components/Beams";
 
 export default function Home() {
   return (

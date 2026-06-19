@@ -20,7 +20,7 @@ export default function StackCard({
   const scale = useTransform(progress, range, [1, targetScale]);
 
   return (
-    <div className="sticky top-0 h-screen flex items-center justify-center">
+    <div className="sticky top-[8vh] py-2 px-6">
       <motion.div
         onMouseMove={(e) => {
           const rect = e.currentTarget.getBoundingClientRect();
@@ -35,10 +35,7 @@ export default function StackCard({
             `${e.clientY - rect.top}px`
           );
         }}
-        style={{
-          scale,
-          top: `calc(-5vh + ${i * 15}px)`,
-        }}
+        style={{ marginTop: i === 0 ? 0 : `${i * 8}px` }}
         className="
           group
           relative
@@ -51,6 +48,8 @@ export default function StackCard({
           transition-all
           duration-300
           hover:-translate-y-1
+          w-full
+          h-[40vh]
         "
       >
         {/* Cursor spotlight */}
