@@ -47,9 +47,10 @@ export default function StackCard({
           bg-[radial-gradient(circle_at_50%_0%,#3a3a3a_0%,#1a1a1a_64%)]
           shadow-[0_0_0_1px_rgba(255,255,255,0.08),0_4px_4px_rgba(0,0,0,0.25)]
           p-6
-          h-[40vh]
+          min-h-[40vh]
           flex flex-col
           justify-between
+          mt-auto
         "
       >
         {/* Cursor spotlight */}
@@ -75,7 +76,7 @@ export default function StackCard({
             <h2 className="mb-2 text-xl font-semibold text-white">
               {title}
             </h2>
-            <p className="text-zinc-400">{description}</p>
+            <p className="text-zinc-400 mb-4">{description}</p>
           </div>
 
           {/* BOTTOM STACK */}
@@ -89,10 +90,9 @@ export default function StackCard({
               font-medium
               rounded-full
               bg-white/5
-              text-zinc-300
-              border border-white/10
-              hover:border-teal-500/40
-              hover:text-teal-300
+              border 
+              border-teal-500/40
+              text-teal-300
               transition-colors
           "
               >
