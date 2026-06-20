@@ -1,8 +1,9 @@
 "use client";
 import { forwardRef } from "react";
-import { motion, useTransform, MotionValue } from "framer-motion";
+import { motion, useTransform, MotionValue, HTMLMotionProps } from "framer-motion";
 
-interface StackCardProps extends Omit<React.HTMLAttributes<HTMLDivElement>, "style"> {
+interface StackCardProps
+  extends Omit<HTMLMotionProps<"div">, "ref" | "style" | "onMouseMove"> {
   i: number;
   title: string;
   description: string;

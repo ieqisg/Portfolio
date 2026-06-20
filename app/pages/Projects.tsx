@@ -25,8 +25,9 @@ export default function Projects() {
             <DialogScrollableContent
               key={i}
               title={card.title}
-              header={card.header}
               content={card.content}
+              websiteLink={card.websiteLink}
+              githubRepo={card.githubRepo}
             >
               <StackCard
                 i={i}
