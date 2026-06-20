@@ -5,7 +5,7 @@ import StackCard from "@/components/StackCard";
 import { useScroll } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import { projectsData } from '@/datas/ProjectsData';
-
+import DialogScrollableContent from '@/components/DialogParent';
 export default function Projects() {
   const container = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({ target: container });
@@ -20,20 +20,27 @@ export default function Projects() {
       <div className="relative">
         {projectsData.map((card, i) => {
           const targetScale = 1 - (projectsData.length - i) * 0.05;
-          return (
-            <StackCard
-              key={i}
-              i={i}
 
+          return (
+            <DialogScrollableContent
+              key={i}
               title={card.title}
-              description={card.description}
-              stack={card.stack}
-              progress={scrollYProgress}
-              range={[i * (1 / projectsData.length), 1]}
-              targetScale={targetScale}
-            />
+              header={card.header}
+              content={card.content}
+            >
+              <StackCard
+                i={i}
+                title={card.title}
+                description={card.description}
+                stack={card.stack}
+                progress={scrollYProgress}
+                range={[i * (1 / projectsData.length), 1]}
+                targetScale={targetScale}
+              />
+            </DialogScrollableContent>
           );
         })}
+
       </div>
     </div>
   )
