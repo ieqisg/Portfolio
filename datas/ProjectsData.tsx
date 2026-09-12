@@ -8,12 +8,12 @@ export const projectsData = [
     githubRepo: "https://github.com/ieqisg/fortis-nexus"
   },
   {
-    title: "Expense Tracker",
-    description: "Developed an expense tracking system that manages user income and expenses using full CRUD operations. The project serves as a learning exercise for backend fundamentals and is currently being refactored for better code optimization and structure.",
-    stack: ["React", "Javascript", "MongoDB", "Supabase", "NodeJS", "Express"],
-    content: "Expense Tracker is a web-based financial tracker that tracks monthly Income and expenses. This project serves as a training ground for CRUD operations, optimizing, refactoring and implementation of other technologies and frameworks that real systems use.",
+    title: "Money Tracker",
+    description: "Developed a full-stack expense tracking system with complete CRUD functionality for managing user income and expenses. Designed with scalability, maintainability, and clean architecture in mind and applying real-world practices while continuously refactoring the codebase to improve performance, structure, and overall code quality.",
+    stack: ["React", "Typescript", "Postgresql", "Tanstack query", "NodeJS", "Express"],
+    content: "Expense Tracker is a web-based financial tracking application designed to manage monthly income and expenses. It serves as a practical learning project for exploring full-stack development, CRUD operations, code optimization, refactoring, and real-world technologies and frameworks. Planned improvements include AI-powered receipt data extraction and migrating the backend from Express.js to Java Spring Boot.",
     website: "",
-    githubRepo: "https://github.com/ieqisg/expense-tracker"
+    githubRepo: "https://github.com/ieqisg/money-tracker"
   },
   {
     title: "Scheduler",

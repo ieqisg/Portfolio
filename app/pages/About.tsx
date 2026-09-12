@@ -23,7 +23,7 @@ export default function About() {
             loop={false}
           />
           <p className="text-base md:text-lg lg:text-xl text-teal-400 font-medium">
-            Full Stack Developer           </p>
+            Aspiring Full Stack Developer           </p>
           <div className="flex items-center gap-2 text-sm text-muted-foreground">
             <MapPin className="w-4 h-4" />
             <span>Manila, Philippines</span>
