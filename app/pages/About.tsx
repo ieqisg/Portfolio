@@ -33,7 +33,7 @@ export default function About() {
         {/* About */}
         <div className="space-y-3">
           <p className="text-muted-foreground leading-relaxed text-xs md:text-sm">
-            I am a third-year Bachelor of Science in Computer Science student specializing in Software Engineering with a strong interest in becoming a full stack developer. I enjoy building both frontend and backend systems, with a focus on creating efficient, scalable, and user-friendly applications. My academic background has given me a solid foundation in programming, data structures, and software design principles, and I am continuously expanding my skills through projects and hands-on development experience.
+            I am a fourth-year Bachelor of Science in Computer Science student specializing in Software Engineering with a strong interest in becoming a full stack developer. I enjoy building both frontend and backend systems, with a focus on creating efficient, scalable, and user-friendly applications. My academic background has given me a solid foundation in programming, data structures, and software design principles, and I am continuously expanding my skills through projects and hands-on development experience.
           </p>
 
         </div>
