@@ -10,8 +10,8 @@ export const projectsData = [
   {
     title: "Money Tracker",
     description: "Developed a full-stack expense tracking system with complete CRUD functionality for managing user income and expenses. Designed with scalability, maintainability, and clean architecture in mind and applying real-world practices while continuously refactoring the codebase to improve performance, structure, and overall code quality.",
-    stack: ["React", "Typescript", "Postgresql", "Tanstack query", "NodeJS", "Express"],
-    content: "Expense Tracker is a web-based financial tracking application designed to manage monthly income and expenses. It serves as a practical learning project for exploring full-stack development, CRUD operations, code optimization, refactoring, and real-world technologies and frameworks. Planned improvements include AI-powered receipt data extraction and migrating the backend from Express.js to Java Spring Boot.",
+    stack: ["React", "Typescript", "Postgresql", "Tanstack query", "NodeJS", "Express", "Spring boot"],
+    content: "Expense Tracker is a web-based financial tracking application designed to manage monthly income and expenses. It serves as a practical learning project for exploring full-stack development, CRUD operations, code optimization, refactoring, and real-world technologies and frameworks. Planned improvements include AI-powered receipt data extraction and analysis and migrating the backend from Express.js to Java Spring Boot.",
     website: "",
     githubRepo: "https://github.com/ieqisg/money-tracker"
   },

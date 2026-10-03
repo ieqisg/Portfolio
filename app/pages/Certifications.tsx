@@ -2,6 +2,7 @@
 import AnimatedSection from "@/components/AnimatedContent"
 import { CertificationsData } from "@/datas/CertificationsData"
 import { BadgeCheck } from "lucide-react"
+import { SquareArrowOutUpRight } from 'lucide-react';
 
 
 
@@ -37,7 +38,7 @@ export default function Certifications() {
                     <p className="text-xs text-muted-foreground mb-2">{cert.issuer}</p>
                     <div className="flex items-center justify-between">
                       <span className="text-xs text-muted-foreground">Issued {cert.date}</span>
-                      <span className="text-xs font-mono text-muted-foreground/60">{cert.id}</span>
+                      <a className="text-xs font-mono text-muted-foreground/60 underline cursor-pointer flex gap-2" href={cert.link}>show credential<SquareArrowOutUpRight className="h-3 w-3" /></a>
                     </div>
                   </div>
                 </div>
