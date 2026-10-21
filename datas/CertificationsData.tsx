@@ -2,6 +2,7 @@
 
 
 interface Certifications {
+  id?: string;
   name: string;
   issuer: string;
   date: string;
@@ -10,12 +11,14 @@ interface Certifications {
 
 export const CertificationsData: Certifications[] = [
   {
+    id: "wnTQA-48J9",
     name: "Python",
     issuer: "Information Technology Specialist ",
     date: "2025",
     link: "https://www.certiport.com/portal/pages/credentialverification.aspx"
   },
   {
+    id: "wYUGV-2FaU",
     name: "PMI Project Management Ready",
     issuer: "Project Management Institute",
     date: "2026",
